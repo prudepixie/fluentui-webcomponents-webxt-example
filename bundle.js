@@ -433,7 +433,7 @@
             :host([disabled]) .control {
               border-color: ${Kt.ButtonFace};
             }
-          `)))),shadowOptions:{delegatesFocus:!0}});var Vi;!function(e){e.Button="button",e.Mixed="mixed",e.Card="card"}(Vi||(Vi={})),tt.getOrCreate(undefined).withPrefix("fluent").register($i());const Fi='<fluent-button appearance="primary">Button</fluent-button>',ki="<fluent-card>I'm a Card</fluent-card>",Di=Fi,Si=Rt`<div id="container">
+          `)))),shadowOptions:{delegatesFocus:!0}});var Vi;!function(e){e.Button="button",e.Mixed="mixed",e.Card="card"}(Vi||(Vi={})),tt.getOrCreate(undefined).withPrefix("fluent").register($i());const Fi='<fluent-button appearance="accent">Button</fluent-button>',ki="<fluent-card>I'm a Card</fluent-card>",Di=Fi,Si=Rt`<div id="container">
   ${function(e,t){const r=t;return(e,t)=>e.repeatNum?r(e,t):null}(0,(e=>e.componentTemplate))}
 </div>`;let Ti=class extends z{constructor(){super(...arguments),this.repeatNum=0,this.component="",this.templatestr=Di,this.componentTemplate=Rt``}connectedCallback(){super.connectedCallback();const e=new URLSearchParams(document.location.search);this.component=e.get("component");const t=e.get("repeatNum");switch(t&&(this.repeatNum=parseInt(t)),this.component){case Vi.Button:this.templatestr=Fi;break;case Vi.Card:this.templatestr=ki;break;default:this.templatestr=Fi}const r=this.templatestr.repeat(this.repeatNum);this.componentTemplate=Rt`${r}`}};var Oi;t([w],Ti.prototype,"repeatNum",void 0),t([w],Ti.prototype,"component",void 0),Ti=t([(Oi={name:"component-container",template:Si},function(e){new M(e,Oi).define()})],Ti)})();
 //# sourceMappingURL=bundle.js.map
